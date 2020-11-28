@@ -1,0 +1,710 @@
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            body {
+                                                font-family: sans-serif;
+                                            }
+                                            
+                                            ul,
+                                            li,
+                                            a {
+                                                list-style: none;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .container-full {
+                                                width: 100%;
+                                            }
+                                            
+                                            .container {
+                                                width: 100%;
+                                                max-width: 940px;
+                                                margin: 0 auto;
+                                                padding: 0 15px;
+                                            }
+                                            
+                                            .header-container {
+                                                display: flex;
+                                                background-color: #ffc40c;
+                                                justify-content: space-between;
+                                                height: 65px;
+                                                padding-right: 25px;
+                                                padding-left: 25px;
+                                            }
+                                            
+                                            .logo {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                            
+                                            .logo img {
+                                                width: 240px;
+                                            }
+                                            
+                                            .navigation {
+                                                position: relative;
+                                                bottom: 10px;
+                                                left: 0;
+                                            }
+                                            
+                                            .menu {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding: 20px;
+                                                margin: auto;
+                                            }
+                                            
+                                            .menu li {
+                                                padding: 10px;
+                                                margin: auto 20px;
+                                                font-weight: 900;
+                                                font-family: Lato, Arial, sans-serif;
+                                            }
+                                            
+                                            .menu li a {
+                                                color: #fff;
+                                                letter-spacing: 2;
+                                                font-size: 14px;
+                                            }
+                                            
+                                            .menu li a:hover {
+                                                color: black;
+                                                background-color: transparent;
+                                            }
+                                            
+                                            .welcome-msg {
+                                                background-color: #2a2a2a;
+                                            }
+                                            
+                                            .message-block {
+                                                display: flex;
+                                                align-items: center;
+                                                flex-wrap: wrap;
+                                                justify-content: center;
+                                                padding: 20px 0;
+                                            }
+                                            
+                                            .message-block p {
+                                                width: 100%;
+                                                text-align: center;
+                                                margin: 20px;
+                                                font-size: 19px;
+                                                color: #fff;
+                                            }
+                                            
+                                            .btn {
+                                                display: block;
+                                                margin: 20px auto 0px;
+                                                padding: 17px 15px;
+                                                width: 240px;
+                                                border: 1px solid #ffc40c;
+                                                font-size: 13px;
+                                                align-self: center;
+                                                text-align: center;
+                                                font-weight: 700;
+                                                color: #ffc40c;
+                                                opacity: 1;
+                                                background-color: transparent;
+                                                text-transform: uppercase;
+                                                transition: background-color 108ms ease;
+                                            }
+                                            
+                                            .btn:hover {
+                                                background-color: gray;
+                                                cursor: pointer;
+                                                color: #fff;
+                                                border: 1px solid #fff;
+                                            }
+                                            
+                                            .btn-white {
+                                                border: 1px solid gray;
+                                                background-color: #fff;
+                                            }
+                                            
+                                            .hero .container {
+                                                position: relative;
+                                                display: flex;
+                                            }
+                                            
+                                            .hero {
+                                                margin-bottom: auto;
+                                                height: 80vh;
+                                                padding: 1px 0px;
+                                                margin-top: 60px;
+                                            }
+                                            
+                                            .hero-section {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                max-width: 100%;
+                                            }
+                                            
+                                            .hero-section img {
+                                                width: 54px;
+                                            }
+                                            
+                                            .h1-heading {
+                                                color: #273c48;
+                                                text-align: center;
+                                                font-weight: 200;
+                                                max-width: 100%;
+                                                margin: 25px;
+                                                margin-top: 40px;
+                                                margin-bottom: 20px;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                font-size: 60px;
+                                                line-height: 66px;
+                                            }
+                                            
+                                            .text-message {
+                                                text-align: center;
+                                                font-size: 19px;
+                                                color: #2a2a2a;
+                                                max-width: 100%;
+                                                margin-top: 41px;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            .hero-img img .container-full {
+                                                position: relative;
+                                                display: flex;
+                                                margin-top: 43px;
+                                                background-image: url("./images/heroimg.png");
+                                            }
+                                            
+                                            .hero-img img {
+                                                width: 100%;
+                                                background-position: 50% 50%;
+                                                background-size: cover;
+                                                background-repeat: no-repeat
+                                            }
+                                            
+                                            .heroimg-text {
+                                                display: inline-block;
+                                                margin-top: 40px;
+                                                margin-left: 40px;
+                                            }
+                                            
+                                            .img-caption {
+                                                position: relative;
+                                                bottom: 754px;
+                                                width: 300px;
+                                                padding: 14px;
+                                                color: #fff;
+                                                font-size: 11px;
+                                                font-weight: 400;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                background-image: linear-gradient(180deg, rgba(42, 42, 42, 0.35), rgba(42, 42, 42, 0.35));
+                                            }
+                                            
+                                            .welcome-block {
+                                                position: relative;
+                                                margin-top: -250px;
+                                                margin-bottom: 0px;
+                                                padding: 20px 60px;
+                                                background-color: #fff;
+                                                z-index: 100;
+                                            }
+                                            
+                                            .welcome-heading2 {
+                                                display: block;
+                                                width: auto;
+                                                margin-right: auto;
+                                                margin-left: auto;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                color: #273c48;
+                                                font-size: 50px;
+                                                line-height: 57px;
+                                                font-weight: 700;
+                                                text-transform: none;
+                                            }
+                                            
+                                            .welcome-text {
+                                                margin-bottom: 52px;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                color: #2a2a2a;
+                                                font-size: 22px;
+                                                line-height: 40px;
+                                                letter-spacing: 0.5px
+                                            }
+                                            
+                                            .btn-grey {
+                                                color: #273c48;
+                                                border: 1px solid black;
+                                            }
+                                            
+                                            .grey-section {
+                                                padding-top: 100px;
+                                                padding-bottom: 100px;
+                                                background-color: #f4f4f2;
+                                            }
+                                            
+                                            .heading-2 {
+                                                display: flex;
+                                                justify-content: center;
+                                                margin-top: 0px;
+                                                color: #273c48;
+                                                font-size: 50px;
+                                                font-weight: 100;
+                                                line-height: 57px;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                text-transform: none;
+                                            }
+                                            
+                                            .text-block-4 {
+                                                text-align: center;
+                                                color: #686868;
+                                                font-size: 18px;
+                                                line-height: 25px;
+                                                font-weight: 400;
+                                            }
+                                            
+                                            .row {
+                                                margin-top: 57px;
+                                                margin-bottom: 57px;
+                                            }
+                                            
+                                            .container .w-row {
+                                                margin-left: -10px;
+                                                margin-right: -10px;
+                                                height: 400px;
+                                            }
+                                            
+                                            .column-2 {
+                                                height: 488px;
+                                                margin-left: 48px;
+                                                margin-right: 48px;
+                                                padding-top: 149px;
+                                                background-color: #fff;
+                                            }
+                                            
+                                            .w-col {
+                                                position: relative;
+                                                float: left;
+                                                min-height: 1px;
+                                                padding-left: 10px;
+                                                padding-right: 10px;
+                                                width: 100%;
+                                            }
+                                            
+                                            .w-col-5 {
+                                                width: 41.66666667%;
+                                            }
+                                            
+                                            .w-col-4 {
+                                                width: 33.33333333%;
+                                            }
+                                            
+                                            .heading-5 {
+                                                margin-top: 0px;
+                                                padding-top: 0px;
+                                                color: #273c48;
+                                                font-weight: 300;
+                                                font-size: 33px;
+                                                letter-spacing: 0.4px;
+                                                text-align: left;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                line-height: 40px;
+                                            }
+                                            
+                                            .text-block-5 {
+                                                margin-left: 0px;
+                                                margin-top: 0px;
+                                                margin-bottom: 0px;
+                                                color: #686868;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                line-height: 25px;
+                                                letter-spacing: 0.60px;
+                                                font-size: 18px;
+                                            }
+                                            
+                                            .column-3 {
+                                                height: 488px;
+                                                padding: 274px 40px 40px;
+                                                background-image: url('./images/collab3.png');
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                position: relative;
+                                                left: 439px;
+                                                bottom: 486px;
+                                            }
+                                            
+                                            .w-col-7 {
+                                                width: 58.33333333%;
+                                            }
+                                            
+                                            .w-row:before,
+                                            .w-row::after {
+                                                content: "";
+                                                display: table;
+                                                grid-column-start: 1;
+                                                grid-row-start: 1;
+                                                grid-column-end: 2;
+                                                grid-row-end: 2;
+                                            }
+                                            
+                                            .w-row:after {
+                                                clear: both;
+                                            }
+                                            
+                                            .text-block-6 {
+                                                margin-bottom: 20px;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                color: #fff;
+                                                font-size: 13px;
+                                                font-weight: 700;
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .text-block-7 {
+                                                font-family: 'Times New Roman', Times, serif;
+                                                color: #fff;
+                                                font-size: 30px;
+                                                line-height: 36px;
+                                                font-weight: 300;
+                                            }
+                                            
+                                            .link {
+                                                -webkit-transition: color 200ms ease;
+                                                transition: color 200ms ease;
+                                                color: #fff;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .container:before,
+                                            .container::after {
+                                                content: "";
+                                                display: table;
+                                                grid-column-start: 1;
+                                                grid-row-start: 1;
+                                                grid-column-end: 2;
+                                                grid-row-end: 2;
+                                            }
+                                            
+                                            a {
+                                                text-decoration: underline;
+                                                background-color: transparent;
+                                            }
+                                            
+                                            .row-2 {
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .w-col-6 {
+                                                width: 50%;
+                                            }
+                                            
+                                            .cta-section-link-block {
+                                                overflow: hidden;
+                                                text-decoration: none;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .w-inline-block {
+                                                max-width: 100%;
+                                                display: inline-block;
+                                            }
+                                            
+                                            .container:after {
+                                                clear: both;
+                                            }
+                                            
+                                            .internal-cta-blocks-chapters {
+                                                position: relative;
+                                                height: 242px;
+                                                border-style: none;
+                                                border-width: 8px 1px 1px;
+                                                border-color: #ffc40c #000 #000;
+                                                background-color: #fff;
+                                                background-image: url('./images/chapter.png');
+                                                background-position: 0px 0px, 0px 0px;
+                                                background-size: cover, 301px;
+                                                background-repeat: no-repeat, repeat;
+                                                background-attachment: scroll, scroll;
+                                            }
+                                            
+                                            .interior-cta-block-text {
+                                                position: relative;
+                                                top: 0px;
+                                                z-index: 5;
+                                                padding: 52px 31px;
+                                                border-top: 8px solid #ffc40c;
+                                                background-color: #f4f4f2;
+                                                -webkit-transition: background-position 100ms ease;
+                                            }
+                                            
+                                            .internal-cta-blocks-toolkit {
+                                                position: relative;
+                                                height: 242px;
+                                                border-style: none;
+                                                border-width: 8px 1px 1px;
+                                                border-color: #ffc40c #000 #000;
+                                                background-color: #fff;
+                                                background-image: url('./images/toolkit.png');
+                                                background-position: 50% 50%;
+                                                background-size: cover;
+                                                background-repeat: no-repeat;
+                                            }
+                                            
+                                            .community-section {
+                                                display: block;
+                                                -webkit-box-pack: center;
+                                                -webkit-justify-content: center;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .row3 {
+                                                display: flex;
+                                            }
+                                            
+                                            .column-5 {
+                                                padding: 101px 133px;
+                                                -webkit-box-orient: horizontal;
+                                                -webkit-box-direction: normal;
+                                                -webkit-flex-direction: row;
+                                                -ms-flex-direction: row;
+                                                flex-direction: row;
+                                                -webkit-box-pack: center;
+                                                -webkit-justify-content: center;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                                -webkit-box-align: baseline;
+                                                -webkit-align-items: baseline;
+                                                -ms-flex-align: baseline;
+                                                align-items: baseline;
+                                                background-color: #ffc40c;
+                                            }
+                                            
+                                            h2 {
+                                                margin-top: 0px;
+                                                margin-bottom: 20px;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                font-weight: 100;
+                                                font-size: 37px;
+                                                font-style: normal;
+                                                line-height: 46px;
+                                                font-weight: 100;
+                                                color: rgb(83, 77, 77);
+                                            }
+                                            
+                                            .column-6 {
+                                                position: static;
+                                                display: block;
+                                                background-image: url(./images/community.jpg);
+                                                background-position: 50% 50%;
+                                                background-size: cover;
+                                                background-repeat: no-repeat;
+                                            }
+                                            
+                                            .final-call-to-action-container {
+                                                margin-top: 200px;
+                                                margin-bottom: 200px;
+                                            }
+                                            
+                                            .container-3 {
+                                                padding-right: 161px;
+                                                padding-left: 161px;
+                                            }
+                                            
+                                            .header-2-bold {
+                                                display: block;
+                                                width: auto;
+                                                margin-right: auto;
+                                                margin-left: auto;
+                                                font-family: 'Times New Roman', Times, serif;
+                                                color: #273c48;
+                                                font-size: 50px;
+                                                line-height: 57px;
+                                                font-weight: 700;
+                                                text-transform: none;
+                                            }
+                                            
+                                            .quote-attribution-text {
+                                                margin-bottom: 18px;
+                                                font-family: 'Brandon Grotesque', Arial, sans-serif;
+                                                color: #979797;
+                                                font-size: 11px;
+                                                line-height: 18px;
+                                                font-weight: 700;
+                                                text-align: center;
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .footer-container {
+                                                position: static;
+                                                display: block;
+                                                ru margin-top: 0px;
+                                                padding-top: 40px;
+                                                padding-bottom: 40px;
+                                                background-color: #f4f4f2;
+                                            }
+                                            
+                                            .footer-supporter-section {
+                                                margin-top: -140px;
+                                            }
+                                            
+                                            .column-7 {
+                                                padding-top: 53px;
+                                            }
+                                            
+                                            img {
+                                                max-width: 100%;
+                                                vertical-align: middle;
+                                                display: inline-block;
+                                            }
+                                            
+                                            img {
+                                                border: 0;
+                                            }
+                                            
+                                            .footer-info-text {
+                                                margin-top: 20px;
+                                                font-family: Lato, Arial, sans-serif;
+                                                color: #273c48;
+                                                font-size: 13px;
+                                                letter-spacing: 0.5px;
+                                            }
+                                            
+                                            .column {
+                                                margin-top: 68px;
+                                                padding-left: 40px;
+                                                color: #273c48;
+                                            }
+                                            
+                                            .footer-nav {
+                                                margin-top: 0px;
+                                                padding-left: 0px;
+                                                font-family: 'Brandon Grotesque', Arial, sans-serif;
+                                                color: #273c48;
+                                                line-height: 25px;
+                                                font-weight: 700;
+                                                text-transform: uppercase;
+                                                list-style-type: none;
+                                            }
+                                            
+                                            .link-5 {
+                                                -webkit-transition: color 200ms ease;
+                                                transition: color 200ms ease;
+                                                color: #273c48;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            a {
+                                                background-color: transparent;
+                                            }
+                                            
+                                            .link-3 {
+                                                -webkit-transition: color 200ms ease;
+                                                transition: color 200ms ease;
+                                                color: #273c48;
+                                                text-decoration: underline;
+                                            }
+                                            
+                                            .footer-social {
+                                                margin-top: 68px;
+                                                padding-top: 0px;
+                                            }
+                                            
+                                            .w-col-3 {
+                                                width: 25%;
+                                            }
+                                            
+                                            .footer-supporter-info {
+                                                font-family: 'Brandon Grotesque', Arial, sans-serif;
+                                                color: #273c48;
+                                                font-size: 11px;
+                                                font-weight: 700;
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .social-link-facebook {
+                                                position: static;
+                                                display: inline-block;
+                                                width: 40px;
+                                                height: 40px;
+                                                float: none;
+                                                border-style: solid none solid solid;
+                                                border-width: 1px;
+                                                border-color: #273c48;
+                                                background-image: url('./images/FB.png');
+                                                background-position: 50% 50%;
+                                                background-size: 11px;
+                                                background-repeat: no-repeat;
+                                                -webkit-transition: all 200ms ease;
+                                                transition: all 200ms ease;
+                                            }
+                                            
+                                            .social-link-twitter {
+                                                position: static;
+                                                display: inline-block;
+                                                width: 40px;
+                                                height: 40px;
+                                                border-style: solid none solid solid;
+                                                border-width: 1px;
+                                                border-color: #273c48;
+                                                background-image: url(./images/TWIT.png);
+                                                background-position: 50% 50%;
+                                                background-size: 21px;
+                                                background-repeat: no-repeat;
+                                                -webkit-transition: all 200ms ease;
+                                            }
+                                            
+                                            .w-inline-block {
+                                                max-width: 100%;
+                                                display: inline-block;
+                                            }
+                                            
+                                            .social-link-insta {
+                                                position: static;
+                                                display: inline-block;
+                                                width: 40px;
+                                                height: 40px;
+                                                border-style: solid none solid solid;
+                                                border-width: 1px;
+                                                border-color: #273c48;
+                                                background-image: url('./images/INTA.png');
+                                                background-position: 50% 50%;
+                                                background-size: 18px;
+                                                background-repeat: no-repeat;
+                                                -webkit-transition: all 200ms ease;
+                                                transition: all 200ms ease;
+                                            }
+                                            
+                                            .social-link-medium.social-link-last {
+                                                position: static;
+                                                display: inline-block;
+                                                width: 40px;
+                                                float: none;
+                                                border-right-style: solid;
+                                                background-image: url('./images/MEDIA.png');
+                                                background-position: 50% 50%;
+                                                background-size: 17px;
+                                                background-repeat: no-repeat;
+                                                -webkit-transition: opacity 200ms ease;
+                                                transition: opacity 200ms ease;
+                                            }
+                                            
+                                            .social-link-medium {
+                                                width: 40px;
+                                                height: 40px;
+                                                border-style: solid none solid solid;
+                                                border-width: 1px;
+                                                border-color: #273c48;
+                                            }
+                                            
+                                            .w-inline-block {
+                                                max-width: 100%;
+                                                display: inline-block;
+                                            }
+                                            
+                                            .footer-supporter-images {
+                                                margin-right: 22px;
+                                                -webkit-transition: opacity 200ms ease;
+                                                transition: opacity 200ms ease;
+                                            }

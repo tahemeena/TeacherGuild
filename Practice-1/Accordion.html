@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+</head>
+
+<style>
+    .toggle1 {
+        width: 100%;
+        background-color: grey;
+        border: none;
+        height: 50px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    
+    .active,
+    .toggle1:hover {
+        background-color: green;
+    }
+    
+    .toggle1::after {
+        content: '\002B';
+        font-size: bold;
+        float: right;
+    }
+    
+    .active::after {
+        content: '\2212';
+    }
+    
+    .content {
+        font-size: 18px;
+        display: none;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+
+
+    <h1>Accordion</h1>
+    <button class="toggle1">Section-1</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex asperiores temporibus incidunt, laboriosamquis odit libero nam aliquid inventore eos repudiandae perferendis. Exercitationem alias rem a eum itaque magnam.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veniam ex asperiores temporibus incidunt, laboriosamquis odit libero nam aliquid inventore eos repudiandae perferendis. Exercitationem alias rem a eum itaque magnam.
+
+        </p>
+    </div>
+
+    <button class="toggle1">Section-2</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex asperiores temporibus incidunt, laboriosamquis odit libero nam aliquid inventore eos repudiandae perferendis. Exercitationem alias rem a eum itaque magnam.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veniam ex asperiores temporibus incidunt, laboriosamquis odit libero nam aliquid inventore eos repudiandae perferendis. Exercitationem alias rem a eum itaque magnam.
+
+        </p>
+    </div>
+
+
+    <button class="toggle1">Section-3</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex asperiores temporibus incidunt, laboriosamquis odit libero nam aliquid inventore eos repudiandae perferendis. Exercitationem alias rem a eum itaque magnam.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veniam ex asperiores temporibus incidunt, laboriosamquis odit libero nam aliquid inventore eos repudiandae perferendis. Exercitationem alias rem a eum itaque magnam.
+
+
+        </p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("toggle1");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var C = this.nextElementSibling;
+                if (C.style.display === "block") {
+                    C.style.display = "none";
+                } else {
+                    C.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
